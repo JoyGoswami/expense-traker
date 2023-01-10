@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/91530a17e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- the container holds the whole app -->
+    <div class="container">
+      <!-- header section -->
+      <section class="header">
+        <h1>Expense Tracker</h1>
+      </section>
+      <!-- header section -->
+      <!-- earning expense total section -->
+      <section class="display-expense-earning">
+        <div class="boxes-container">
+          <div class="box">
+            <p>Income</p>
+            <p class="income">$0</p>
+          </div>
+          <div class="box">
+            <p>Balance</p>
+            <p class="balance">$0</p>
+          </div>
+          <div class="box">
+            <p>Expense</p>
+            <p class="expense">$0</p>
+          </div>
+        </div>
+      </section>
+      <!-- earning expense total section -->
+      <!-- input form -->
+      <section class="input-area">
+        <div class="input-container">
+          <input
+            type="text"
+            class="expense-details"
+            placeholder="Add Expense Details..."
+          />
+          <input type="number" class="expense-amount" placeholder="Amount..." />
+        </div>
+
+        <div class="btn-container">
+          <button class="add-income btn">Add Income</button>
+          <button class="add-expense btn">Add Expense</button>
+        </div>
+      </section>
+
+      <!-- input form -->
+
+      <!-- display expenses section -->
+
+      <section class="display-expense">
+        <ul class="expense-list">
+          <!-- <li class="expense-items">
+            <div class="expense-details-el">
+              <p>Car</p>
+            </div>
+            <div class="expense-amount-el">
+              <p>$5000</p>
+            </div>
+            <div class="option-el">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="del-edit">
+              <button class="del">Delete</button>
+              <button class="edit">Edit</button>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+
+      <!-- display expenses section -->
+
+      <!-- no money overlay -->
+
+      <div class="overlay">
+        <p>You have no money to spend</p>
+        <button class="go-back">Go Back</button>
+      </div>
+
+      <!-- no money overlay -->
+    </div>
+    <div class="overlay-body-hide overlay-body" id="overlayBody"></div>
+    <script src="appVerson1.js"></script>
+  </body>
+</html>
